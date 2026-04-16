@@ -1,18 +1,16 @@
+import nltk
+
+nltk.download("punkt")
+nltk.download("stopwords")
+
 import re
 from pyresparser import ResumeParser
 from pdfminer.high_level import extract_text
-import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from keyword_lists import JOB_KEYWORDS
-
-import nltk
-nltk.download("punkt")
-nltk.download("stopwords")
-
-from nltk.corpus import stopwords
 
 
 class ResumeJobMatcher:
