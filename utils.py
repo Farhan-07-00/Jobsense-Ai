@@ -8,8 +8,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from keyword_lists import JOB_KEYWORDS
 
-nltk.download("punkt", quiet=True)
-nltk.download("stopwords", quiet=True)
+import nltk
+nltk.download("punkt")
+nltk.download("stopwords")
+
+from nltk.corpus import stopwords
 
 
 class ResumeJobMatcher:
