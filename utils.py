@@ -1,7 +1,15 @@
 import nltk
 
-nltk.download("punkt")
-nltk.download("stopwords")
+# Download only if missing
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
+
+try:
+    nltk.data.find("corpora/stopwords")
+except LookupError:
+    nltk.download("stopwords")
 
 import re
 from pyresparser import ResumeParser
