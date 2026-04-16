@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import pandas as pd
 from datetime import datetime
-import database
+#import database
 import utils
 from keyword_lists import COURSE_RECOMMENDATIONS, YOUTUBE_RECOMMENDATIONS
 import config
@@ -29,7 +29,7 @@ if "analysis_done" not in st.session_state:
 
 # Initialize objects
 matcher = utils.ResumeJobMatcher()
-db = database.Database()
+#db = database.Database()
 
 
 # ------------------------------
