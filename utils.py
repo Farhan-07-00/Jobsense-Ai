@@ -1,10 +1,15 @@
 import nltk
 
-# Download only if missing
+# Download NLTK resources if missing
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
     nltk.download("punkt")
+
+try:
+    nltk.data.find("tokenizers/punkt_tab")
+except LookupError:
+    nltk.download("punkt_tab")
 
 try:
     nltk.data.find("corpora/stopwords")
