@@ -1,115 +1,153 @@
-🤖 JobSense AI — Smart Resume Matcher
+<div align="center">
 
-An AI-powered Resume and Job Description Matching System built with Python and Streamlit that analyzes resumes, evaluates ATS compatibility, and provides skill-gap insights to improve job readiness.
+# 🤖 JobSense AI
 
-🚀 Live Demo
+### Smart Resume Matcher & ATS Analyzer
 
-🌐 Try the application here
+🚀 **AI-Powered Resume Analysis Platform** that evaluates resume-job compatibility, predicts suitable roles, identifies skill gaps, and helps candidates optimize resumes for ATS systems.
 
-https://jobsense-ai.streamlit.app
-📌 Project Overview
+🌐 **Live Demo:** https://jobsense-ai.streamlit.app
 
-JobSense AI helps job seekers understand how well their resume matches a job description.
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?logo=streamlit)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-NLP-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-TF--IDF-orange?logo=scikitlearn)
+![License](https://img.shields.io/badge/License-MIT-purple)
 
-The system analyzes the resume using Natural Language Processing (NLP) techniques and compares it with a job description to generate intelligent insights such as:
+</div>
 
-Resume-Job Match Score
-ATS Compatibility Score
-Skill Gap Analysis
-Predicted Job Roles
-AI Suggestions for Resume Improvement
+---
 
-This helps users improve their resumes and increase their chances of passing Applicant Tracking Systems (ATS) used by companies.
+## 📖 Overview
 
-✨ Features
-📄 Resume Parsing
+**JobSense AI** is an intelligent Resume Screening and Job Matching System that helps job seekers understand how well their resumes align with specific job descriptions.
 
-Extracts structured information from resume PDFs using NLP.
+Using **Natural Language Processing (NLP)** and **Machine Learning**, the platform analyzes resumes, measures ATS compatibility, detects missing skills, predicts suitable job roles, and provides personalized recommendations to improve employability.
 
-🎯 Job Match Score
+---
 
-Calculates similarity between resume and job description using TF-IDF + Cosine Similarity.
+## ✨ Key Features
 
-🤖 ATS Score
+### 📄 Resume Parsing
 
-Evaluates resume compatibility with Applicant Tracking Systems.
+Extracts structured information from uploaded PDF resumes using advanced text processing techniques.
 
-🧠 Skill Extraction
+### 🎯 Resume-Job Match Score
 
-Detects technical skills from resumes using predefined job skill datasets.
+Compares resumes with job descriptions using **TF-IDF Vectorization** and **Cosine Similarity** to generate an accurate compatibility score.
 
-📉 Skill Gap Analysis
+### 🤖 ATS Compatibility Analysis
 
-Identifies missing skills required for the job.
+Evaluates how well a resume can perform in Applicant Tracking Systems (ATS) used by recruiters.
 
-💼 Job Role Prediction
+### 🧠 Skill Extraction
 
-Predicts suitable job categories based on detected skills.
+Automatically identifies technical and professional skills from resumes.
 
-📚 Learning Recommendations
+### 📉 Skill Gap Analysis
 
-Suggests relevant courses and learning resources.
+Highlights missing skills required for a target job role.
 
-🌐 Web Interface
+### 💼 Job Role Prediction
 
-Interactive UI built with Streamlit.
+Suggests suitable career paths and job categories based on extracted skills.
 
-🛠️ Tech Stack
+### 📚 Learning Recommendations
 
-Frontend
+Provides resources and guidance to bridge skill gaps.
 
-Streamlit
+### 🌐 Interactive Dashboard
 
-Backend
+Clean and responsive user interface built with Streamlit.
 
-Python
+---
 
-Machine Learning / NLP
+## 🛠️ Tech Stack
 
-Scikit-learn
-NLTK
-TF-IDF Vectorization
-Cosine Similarity
+| Category          | Technologies               |
+| ----------------- | -------------------------- |
+| Frontend          | Streamlit                  |
+| Backend           | Python                     |
+| Machine Learning  | Scikit-Learn               |
+| NLP               | NLTK                       |
+| Similarity Engine | TF-IDF + Cosine Similarity |
+| Resume Parsing    | PyResParser, PDFMiner      |
+| Data Processing   | Pandas, NumPy              |
 
-Resume Processing
+---
 
-PyResParser
-PDFMiner
+## 🚀 Live Application
 
-Data Handling
+### 🔗 Demo Link
 
-Pandas
-NumPy
-⚙️ Installation
+**https://jobsense-ai.streamlit.app**
 
-Clone the repository
+---
 
+## 📊 How It Works
+
+```mermaid
+flowchart LR
+A[Upload Resume PDF] --> B[Extract Resume Text]
+B --> C[Upload Job Description]
+C --> D[NLP Processing]
+D --> E[Similarity Analysis]
+E --> F[ATS Evaluation]
+F --> G[Skill Gap Detection]
+G --> H[Role Prediction]
+H --> I[Recommendations Dashboard]
+```
+
+---
+
+## 📸 Dashboard Preview
+
+### Resume Analysis Dashboard
+
+Displays:
+
+✅ Resume Match Score
+✅ ATS Score
+✅ Extracted Skills
+✅ Missing Skills
+✅ Suggested Job Roles
+✅ Learning Recommendations
+
+> Add screenshots here for a more professional repository presentation.
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/Farhan-07-00/jobsense-ai.git
+```
 
-Move into project directory
+### Navigate to Project
 
+```bash
 cd jobsense-ai
+```
 
-Install dependencies
+### Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the application
+### Run Application
 
+```bash
 streamlit run app.py
-📊 How It Works
+```
 
-1️⃣ User uploads a Resume (PDF)
-2️⃣ User uploads or pastes a Job Description
-3️⃣ The system processes text using NLP techniques
-4️⃣ Resume and job description are compared
-5️⃣ AI generates:
+---
 
-Match Score
-ATS Score
-Skill Gaps
-Suggested Job Roles
-📁 Project Structure
+## 📂 Project Structure
+
+```text
 jobsense-ai
 │
 ├── app.py
@@ -120,27 +158,49 @@ jobsense-ai
 │
 ├── static
 │   └── style.css
-📸 Screenshots
-Resume Analysis Dashboard
+│
+└── README.md
+```
 
-Shows AI analysis including scores, skills, and recommendations.
+---
 
-🎯 Future Improvements
-Semantic Resume Matching using Sentence Transformers
-Resume Improvement Suggestions using LLMs
-Resume PDF Report Generation
-Support for more job domains
-Better AI skill detection
-👨‍💻 Author
+## 🎯 Use Cases
 
-Farhan Akhtar
+* Resume Screening
+* ATS Optimization
+* Career Guidance
+* Skill Gap Identification
+* Job Readiness Assessment
+* Student Placement Preparation
 
-B.Tech CSE Student
-Adamas University
+---
 
-GitHub
-https://github.com/Farhan-07-00
+## 🔮 Future Enhancements
 
-⭐ If you like this project
+* 🤖 LLM-Powered Resume Feedback
+* 🧠 Semantic Matching using Sentence Transformers
+* 📄 Resume PDF Report Generation
+* 🌍 Multi-Language Resume Analysis
+* 💬 AI Career Assistant
+* 📈 Advanced Skill Recommendation Engine
 
-Give it a star ⭐ on GitHub.
+---
+
+## 👨‍💻 Developer
+
+### Farhan Akthar
+
+🎓 B.Tech CSE Student
+🏫 Adamas University
+
+💻 GitHub: https://github.com/Farhan-07-00
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, please consider giving it a star!
+
+Built with ❤️ using Python, NLP & Machine Learning
+
+</div>
