@@ -113,7 +113,8 @@ Displays:
 ✅ Suggested Job Roles
 ✅ Learning Recommendations
 
-> Add screenshots here for a more professional repository presentation.
+> <img width="1894" height="898" alt="image" src="https://github.com/user-attachments/assets/8950a7cc-7d4e-4a82-bcf7-7c02347cc5d0" />
+
 
 ---
 
