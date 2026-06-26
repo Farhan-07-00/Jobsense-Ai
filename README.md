@@ -4,7 +4,7 @@
 
 ### Smart Resume Matcher & ATS Analyzer
 
-🚀 **AI-Powered Resume Analysis Platform** that evaluates resume-job compatibility, predicts suitable roles, identifies skill gaps, and helps candidates optimize resumes for ATS systems.
+🚀 **AI-Powered Resume Analysis Platform** that evaluates resume-job compatibility, predicts suitable roles, identifies skill gaps, and helps candidates optimize resumes for ATS systems
 
 🌐 **Live Demo:** https://jobsense-ai.streamlit.app
 
